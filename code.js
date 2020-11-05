@@ -25,9 +25,10 @@ $(document).ready(function(){
 
         $("#qt1").text(qt1.toFixed(0));
         $("#qt2").text(qt2.toFixed(0));
-        $("#prodLJTotal").text(prodLJTotal.toFixed(2));
-        $("#prodDonTotal").text(prodDonTotal.toFixed(2));
-        $("#grandTotal").text(grandTotal.toFixed(2));
+        $("#prodLJTotal").text(prodLJTotal.toLocaleString('en-US', { style: 'currency', currency: 'USD' }));
+        $("#prodDonTotal").text(prodDonTotal.toLocaleString('en-US', { style: 'currency', currency: 'USD' }));
+        $("#grandTotal").text(grandTotal.toLocaleString('en-US', { style: 'currency', currency: 'USD' }));
+
 
 
 
