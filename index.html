@@ -1,34 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <title>Lab 5 Question 2</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Lab 5 Question 2</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
 <h1>jQuery Order Form</h1>
-    <h2>Quantity</h2>
 
-     <form>
-
-         <input type="number" name="learn" id="#prodLJ" data-price="39.99" min="0" max="5" required="required">
-         <label for="#prodLJ">Learning jQuery</label>
-
-         <br>
-
-
-         <input type="number" name="learn" id="#prodDon" data-price="14.99" min="0" max="5" required="required">
-         <label for="#prodDon">jQuery Donation</label>
-
-         <br>
-
-         <button id= "orderButtonOrder">Order</button>
-
-     </form>
-    <br>
-
+<form>
 
 <table class="table">
 <tr>
@@ -38,13 +19,13 @@
     <th>Total</th>
 </tr>
     <tr>
-        <td id="qt1"></td>
+        <td><label for="prodLJ"></label><input type="number" id="prodLJ" min="0" max="5" required="required"></td>
         <td>Learning jQuery</td>
         <td>$39.99</td>
         <td id="prodLJTotal"></td>
     </tr>
     <tr>
-        <td id="qt2" ></td>
+        <td><label for="prodDon"></label><input type="number" id="prodDon" min="0" max="5" required="required"></td>
         <td>jQuery Donation</td>
         <td>$14.99</td>
         <td id="prodDonTotal"></td>
@@ -55,10 +36,12 @@
         <td>Grand Total</td>
         <td id="grandTotal"></td>
     </tr>
-</table>
-    <br>
 
+</table>
+    <button id="orderButtonOrder">Order</button>
+</form>
 </div>
+
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
