@@ -1,11 +1,12 @@
 $(document).ready(function(){
-    $("form").submit(placeOrder);
+    $("#prodLJ").change(placeOrder);
+    $("#prodDon").change(placeOrder);
 
 
 
-    function placeOrder(event) {
+    function placeOrder() {
         //prevent form from flashing and resetting
-        event.preventDefault();
+
 
         console.log("entering placeOrder");
 
